@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shamal Technologies - Geospatial Analytics</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/x-icon" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Google Fonts (Sora) -->
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+    <!-- Lenis UI css -->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.15/dist/lenis.css" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent py-3">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold" href="#">
+                <!-- Logo Placeholder -->
+                <img src="assets/logo-footer.svg" alt="Shamal Technologies Logo" height="30" />
+            </a>
+            <button class="navbar-toggler icon2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav"
+                aria-controls="offcanvasNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-blue-1" href="#about">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-blue-1" href="#" role="button"
+                            data-bs-toggle="dropdown">Services</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item text-blue-1" href="#"><i class="bi bi-arrow-repeat"></i> Aerial
+                                    Survey</a>
+                            </li>
+                            <li><a class="dropdown-item text-blue-1" href="#"><i class="bi bi-cone-striped"></i>
+                                    Construction Monitoring</a></li>
+                            <li><a class="dropdown-item text-blue-1" href="#"><i
+                                        class="bi bi-lightning-charge-fill"></i> Asset Inspection</a></li>
+                            <li><a class="dropdown-item text-blue-1" href="#"><i class="bi bi-water"></i> Bathymetric
+                                    &amp; Under water Survey
+                                </a></li>
+                            <li><a class="dropdown-item text-blue-1" href="#"><i class="bi bi-pin-map-fill"></i> GIS
+                                    &amp; Remote sensing</a></li>
+                            <li><a class="dropdown-item text-blue-1" href="#"><i class="fa-solid fa-seedling"></i>
+                                    Environmental Monitoring</a></li>
+                            <li><a class="dropdown-item text-blue-1" href="#"><i class="bi bi-box"></i> SCAN/CAD to
+                                    BIM</a></li>
+                            <li><a class="dropdown-item text-blue-1" href="#"><i class="bi bi-hammer"></i> Mining &amp;
+                                    Exploration</a></li>
+                            <li><a class="dropdown-item text-blue-1" href="#"><i class="bi bi-shield-check"></i>
+                                    Security Surveillance</a></li>
+                            <li><a class="dropdown-item text-blue-1" href="#"><i class="bi bi-cpu-fill"></i> AI
+                                    Application Development</a></li>
+                            <li><a class="dropdown-item text-blue-1" href="#"><i class="bi bi-leaf-fill"></i>
+                                    Agriculture Monitorings</a></li>
+                            <li><a class="dropdown-item text-blue-1" href="#"><i
+                                        class="fa-solid fa-magnifying-glass"></i> Special Projects</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-blue-1" href="#" role="button"
+                            data-bs-toggle="dropdown">Products</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item text-blue-1" href="#"><i class="bi bi-arrow-repeat"></i> Aerial
+                                    Survey</a>
+                            </li>
+                            <li><a class="dropdown-item text-blue-1" href="#"><i class="bi bi-cone-striped"></i>
+                                    Construction Monitoring</a>
+                            </li>
+                            <li><a class="dropdown-item text-blue-1" href="#"><i
+                                        class="bi bi-lightning-charge-fill"></i> Asset
+                                    Inspection</a></li>
+                            <li><a class="dropdown-item text-blue-1" href="#"><i class="bi bi-water"></i> Bathymetric
+                                    &amp; Under water
+                                    Survey
+                                </a></li>
+                            <li><a class="dropdown-item text-blue-1" href="#"><i class="bi bi-pin-map-fill"></i> GIS
+                                    &amp; Remote
+                                    sensing</a></li>
+                            <li><a class="dropdown-item text-blue-1" href="#"><i class="fa-solid fa-seedling"></i>
+                                    Environmental
+                                    Monitoring</a></li>
+                            <li><a class="dropdown-item text-blue-1" href="#"><i class="bi bi-box"></i> SCAN/CAD to
+                                    BIM</a></li>
+                            <li><a class="dropdown-item text-blue-1" href="#"><i class="bi bi-hammer"></i> Mining &amp;
+                                    Exploration</a></li>
+                            <li><a class="dropdown-item text-blue-1" href="#"><i class="bi bi-shield-check"></i>
+                                    Security Surveillance</a>
+                            </li>
+                            <li><a class="dropdown-item text-blue-1" href="#"><i class="bi bi-cpu-fill"></i> AI
+                                    Application Development</a>
+                            </li>
+                            <li><a class="dropdown-item text-blue-1" href="#"><i class="bi bi-leaf-fill"></i>
+                                    Agriculture Monitorings</a>
+                            </li>
+                            <li><a class="dropdown-item text-blue-1" href="#"><i
+                                        class="fa-solid fa-magnifying-glass"></i> Special
+                                    Projects</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-blue-1" href="#blogs">Blog</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link text-blue-1" href="#contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-b2" href="#" role="button" data-bs-toggle="dropdown"><i
+                                class="bi bi-translate"></i> ENG</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-blue-1" href="#">Arabic</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- OFFCANVAS MOBILE MENU (Kept Original Structure) -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-b2">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active fw-bold" href="#hero">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-blue-1" href="#about">About</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-blue-1" href="#" role="button"
+                        data-bs-toggle="dropdown">Services</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item text-blue-1" href="#">Aerial Survey</a>
+                        </li>
+                        <li><a class="dropdown-item text-blue-1" href="#">Construction Monitoring</a></li>
+                        <li><a class="dropdown-item text-blue-1" href="#">Asset Inspection</a></li>
+                        <li><a class="dropdown-item text-blue-1" href="#">Bathymetric &amp; Under water Survey
+                            </a></li>
+                        <li><a class="dropdown-item text-blue-1" href="#">GIS &amp; Remote sensing</a></li>
+                        <li><a class="dropdown-item text-blue-1" href="#">Environmental Monitoring</a></li>
+                        <li><a class="dropdown-item text-blue-1" href="#">SCAN/CAD to BIM</a></li>
+                        <li><a class="dropdown-item text-blue-1" href="#">Mining &amp; Exploration</a></li>
+                        <li><a class="dropdown-item text-blue-1" href="#">Security Surveillance</a></li>
+                        <li><a class="dropdown-item text-blue-1" href="#">AI Application Development</a></li>
+                        <li><a class="dropdown-item text-blue-1" href="#">Agriculture Monitorings</a></li>
+                        <li><a class="dropdown-item text-blue-1" href="#">Special Projects</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item text-blue-1"><a class="nav-link" href="#blogs">Blog</a></li>
+                <li class="nav-item text-blue-1">
+                    <a class="nav-link text-blue-1" href="#contact">Contact Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-b2" href="#" role="button" data-bs-toggle="dropdown"><i
+                            class="bi bi-translate"></i> ENG</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item text-blue-1" href="#">Arabic</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- HERO SECTION (Video replaced with gradient background) -->
+    <section id="hero" class="hero-video">
+        <video src="assets/videos/hero.mp4" autoplay muted loop></video>
+        <div class="hero-overlay">
+            <h1 class="display-6 fw-bold mb-3">
+                Project Insights with Real-Time Drone Data & Advanced Geospatial
+                Analyses
+            </h1>
+            <p class="lead fw-light mb-4 w-80">
+                Gain faster decision-making power with high-accuracy drone mapping,
+                real-time analytics, and fully immersive geospatial intelligence.
+            </p>
+            <a class="btn btn-primary btn-lg mt-3" href="#contact">
+                Get a Quote Today
+            </a>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION (Kept Original Structure) -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="title-container">
+                <h1 class="title-text">OUR SERVICES</h1>
+                <div class="title-underline-wrapper">
+                    <div class="title-underline"></div>
+                </div>
+            </div>
+
+            <!-- Carousel Implementation -->
+            <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner pb-5">
+
+                    <!-- Slide 1: Core Geospatial (4 services) -->
+                    <div class="carousel-item active">
+                        <div class="row g-4 justify-content-center">
+                            <!-- Service 1: Aerial Survey -->
+                            <div class="col-12 col-md-6 col-lg-3 fade-up">
+                                <div class="card services-card h-100">
+                                    <img class="card-img-top"
+                                        src="assets/images/services/aerial-survey-using-drone-in-saudi-arabia.jpg"
+                                        alt="aerial-survey-using-drone-in-saudi-arabia">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title text-b2">Aerial Survey</h5>
+                                        <p class="card-text">High-accuracy mapping for large-scale terrains using
+                                            photogrammetry and advanced data processing.</p>
+                                        <a href="aerial-survey-in-saudi-arabia.html"
+                                            class="btn btn-outline-primary m-1">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Service 2: Construction Monitoring -->
+                            <div class="col-12 col-md-6 col-lg-3 fade-up">
+                                <div class="card services-card h-100">
+                                    <img class="card-img-top"
+                                        src="assets/images/services/construction-monitoring-using-drone-in-saudi-arabia.jpg"
+                                        alt="construction-survey-using-drone-in-saudi-arabia">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title text-b2">Contruction Monitoring</h5>
+                                        <p class="card-text">Real-time site progress tracking, volume calculations, and
+                                            BIM integration for
+                                            construction projects.</p>
+                                        <a href="construction-monitoring-in-saudi-arabia.html"
+                                            class="btn btn-outline-primary m-1">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Service 3: Asset Inspection -->
+                            <div class="col-12 col-md-6 col-lg-3 fade-up">
+                                <div class="card services-card h-100">
+                                    <img class="card-img-top"
+                                        src="assets/images/services/asset-inspection-survey-using-drone-in-saudi-arabia.jpg"
+                                        alt="asset-inspection-survey-using-drone-in-saudi-arabia">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title text-b2">Asset Inspection</h5>
+                                        <p class="card-text">Detailed, non-contact inspection of infrastructure like
+                                            towers, bridges, and pipelines
+                                            using thermal/RGB data.</p>
+                                        <a href="asset-inspection-in-saudi-arabia.html"
+                                            class="btn btn-outline-primary m-1">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Service 4: Bathymetric & Under water Survey -->
+                            <div class="col-12 col-md-6 col-lg-3 fade-up">
+                                <div class="card services-card h-100">
+                                    <img class="card-img-top"
+                                        src="assets/images/services/bathymetric-survey-in-saudi-arabia.jpg"
+                                        alt="aerial-survey-using-drone-in-saudi-arabia">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title text-b2">Bathymetric Survey</h5>
+                                        <p class="card-text">High-resolution underwater mapping and surveying of water
+                                            bodies for resource and depth analysis.</p>
+                                        <a href="bathymetric-survey-in-saudi-arabia.html"
+                                            class="btn btn-outline-primary m-1">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2: Data & Environment (4 services) -->
+                    <div class="carousel-item">
+                        <div class="row g-4 justify-content-center">
+                            <!-- Service 5: GIS & Remote sensing -->
+                            <div class="col-12 col-md-6 col-lg-3 fade-up">
+                                <div class="card services-card h-100">
+                                    <img class="card-img-top"
+                                        src="assets/images/services/gis-and-remote-sensing-in-saudi-arabia.jpg"
+                                        alt="GIS-and-Remote-Sensing-in-saudi-arabia">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title text-b2">GIS &amp; Remote Sensing</h5>
+                                        <p class="card-text">Tracking ecological changes, pollution sources, and land
+                                            use
+                                            for regulatory compliance and sustainability.</p>
+                                        <a href="construction-monitoring-in-saudi-arabia.html"
+                                            class="btn btn-outline-primary m-1">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Service 6: Environmental Monitoring -->
+                            <div class="col-12 col-md-6 col-lg-3 fade-up">
+                                <div class="card services-card h-100">
+                                    <img class="card-img-top"
+                                        src="assets/images/services/environmental-monitoring-using-drone-in-saudi-arabia.jpg"
+                                        alt="aerial-survey-using-drone-in-saudi-arabia">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title text-b2">Environmental Monitoring</h5>
+                                        <p class="card-text">Tracking ecological changes, pollution sources, and land
+                                            use
+                                            for regulatory compliance and sustainability.</p>
+                                        <a href="environmental-monitoring-in-saudi-arabia.html"
+                                            class="btn btn-outline-primary m-1">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Service 7: SCAN/CAD to BIM -->
+                            <div class="col-12 col-md-6 col-lg-3 fade-up">
+                                <div class="card services-card h-100">
+                                    <img class="card-img-top"
+                                        src="assets/images/services/scan-cad-to-BIM-survey-in-saudi-arabia.jpg"
+                                        alt="scan-cad-to-BIM-survey-in-saudi-arabia">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title text-b2">SCAN/CAD to BIM</h5>
+                                        <p class="card-text">Converting point cloud data (Scan) and existing drawings
+                                            (CAD)
+                                            into full Building Information Models (BIM).</p>
+                                        <a href="scan-cad-to-BIM-survey-in-saudi-arabia.html"
+                                            class="btn btn-outline-primary m-1">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Service 8: Mining & Exploration -->
+                            <div class="col-12 col-md-6 col-lg-3 fade-up">
+                                <div class="card services-card h-100">
+                                    <img class="card-img-top"
+                                        src="assets/images/services/mining-survey--and-exploration-using-drones-in-saudi-arabia.jpg"
+                                        alt="aerial-survey-using-drone-in-saudi-arabia">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title text-b2">SCAN/CAD to BIM</h5>
+                                        <p class="card-text">Converting point cloud data (Scan) and existing drawings
+                                            (CAD)
+                                            into full Building Information Models (BIM).</p>
+                                        <a href="scan-cad-to-BIM-survey-in-saudi-arabia.html"
+                                            class="btn btn-outline-primary m-1">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3: Advanced/Niche (4 services) -->
+                    <div class="carousel-item">
+                        <div class="row g-4 justify-content-center">
+                            <!-- Service 9: Security Surveillance -->
+                            <div class="col-12 col-md-6 col-lg-3 fade-up">
+                                <div class="card services-card h-100">
+                                    <img class="card-img-top"
+                                        src="assets/images/services/security-surveillance-monitoring-using-drone-in-saudi-arabia.jpg"
+                                        alt="security-surveillance-monitoring-using-drone-in-saudi-arabia">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title text-b2">Security Surveillance</h5>
+                                        <p class="card-text">Wide-area monitoring and perimeter surveillance using
+                                            persistent aerial observation and data.</p>
+                                        <a href="security-surveillance-monitoring-using-drone-in-saudi-arabia.html"
+                                            class="btn btn-outline-primary m-1">Learn
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Service 10: AI Application Development -->
+                            <div class="col-12 col-md-6 col-lg-3 fade-up">
+                                <div class="card services-card h-100">
+                                    <img class="card-img-top"
+                                        src="assets/images/services/ai-application-development-using-drones-in-saudi-arabia.jpg"
+                                        alt="aerial-survey-using-drone-in-saudi-arabia">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title text-b2">AI Application Development</h5>
+                                        <p class="card-text">Tracking ecological changes, pollution sources, and land
+                                            use for regulatory compliance and sustainability.</p>
+                                        <a href="ai-application-development-using-drones-in-saudi-arabia.html"
+                                            class="btn btn-outline-primary m-1">Learn
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Service 11: Agriculture Monitorings -->
+                            <div class="col-12 col-md-6 col-lg-3 fade-up">
+                                <div class="card services-card h-100">
+                                    <img class="card-img-top"
+                                        src="assets/images/services/agriculture-monitoring-using-drone-in-saudi-arabia.jpg"
+                                        alt="agriculture-monitoring-using-drone-in-saudi-arabia">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title text-b2">Agriculture Monitoring</h5>
+                                        <p class="card-text">High-resolution spectral analysis (NDVI, etc.) for crop
+                                            health, yield prediction, and precision farming.</p>
+                                        <a href="agriculture-monitoring-in-saudi-arabia.html"
+                                            class="btn btn-outline-primary m-1">Learn
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Service 12: Special Projects -->
+                            <div class="col-12 col-md-6 col-lg-3 fade-up">
+                                <div class="card services-card h-100">
+                                    <img class="card-img-top"
+                                        src="assets/images/services/do-a-special-project-using-drone-in-saudi-arabia.jpg"
+                                        alt="do-a-special-project-using-drone-in-saudi-arabia">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title text-b2">Special Projects</h5>
+                                        <p class="card-text">Tailored solutions for unique or complex data acquisition
+                                        challenges, including R&D support.</p>
+                                        <a href="special-projects-for-survey-using-drones-in-saudi-arabia.html"
+                                            class="btn btn-outline-primary m-1">Learn
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of slides --> 
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+
+        </div>
+    </section>
+
+
+    <!-- ABOUT SHAMAL (Enhanced with Title Styling) -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="title-container">
+                <h1 class="title-text">ABOUT US</h1>
+                <div class="title-underline-wrapper">
+                    <div class="title-underline"></div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6 fade-up">
+                    <h3 class="fw-bold text-b2">Pioneering Geospatial Intelligence</h3>
+                    <p class="lead">
+                        Shamal Technologies is a leading provider of advanced drone solutions, delivering real-time
+                        geospatial intelligence for diverse industries.
+                    </p>
+                    <p>
+                        Our core mission is to empower decision-makers with high-accuracy, reliable data captured via
+                        cutting-edge drone technology and processed using state-of-the-art geospatial analyses. We
+                        specialize in reducing project timelines, mitigating risks, and optimizing operational costs.
+                    </p>
+                    <p>
+                        With years of experience across construction, mining, and environmental sectors, our team
+                        ensures every deliverable is precise, actionable, and ready for integration into your existing
+                        enterprise systems (CAD, GIS, BIM).
+                    </p>
+                    <a href="#contact" class="btn btn-outline-primary mt-3">Learn more</a>
+                </div>
+                <div class="col-md-6 fade-up mt-4 mt-md-0">
+                    <!-- Video Placeholder -->
+                    <video src="assets/videos/about.mp4" autoplay muted loop width="100%"
+                        style="border-radius: 8px"></video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS & BENEFITS (Enhanced with Card Styles) -->
+    <section id="how-it-works" class="py-5">
+        <div class="container">
+            <div class="title-container">
+                <h1 class="title-text">OUR PROCESS</h1>
+                <div class="title-underline-wrapper">
+                    <div class="title-underline"></div>
+                </div>
+            </div>
+
+            <h3 class="text-b2 text-center mb-4 mt-5 fw-bold">How We Deliver Results</h3>
+            <div class="row g-4">
+                <div class="col-md-3 fade-up">
+                    <div class="card process-card p-3 h-100">
+                        <h5 class="text-blue-1 fw-bold">1. Planning & Acquisition</h5>
+                        <p class="mb-0">
+                            Deploy drones equipped with high-resolution sensors to capture precise aerial or underwater
+                            data based on project requirements.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 fade-up">
+                    <div class="card process-card p-3 h-100">
+                        <h5 class="text-blue-1 fw-bold">2. Modeling & Processing</h5>
+                        <p class="mb-0">
+                            Data is processed using photogrammetry, LiDAR, or specialized geospatial tools to generate
+                            accurate 2D/3D models and outputs.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 fade-up">
+                    <div class="card process-card p-3 h-100">
+                        <h5 class="text-blue-1 fw-bold">3. Analysis & Verification</h5>
+                        <p class="mb-0">
+                            Experts validate every dataset and perform advanced analytics to extract actionable insights
+                            and ensure sub-centimeter accuracy.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 fade-up">
+                    <div class="card process-card p-3 h-100">
+                        <h5 class="text-blue-1 fw-bold">4. Delivery & Reporting</h5>
+                        <p class="mb-0">
+                            Clients receive interactive maps, dashboards, or CAD/BIM-ready files with full documentation
+                            and recommendations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO / GALLERY SECTION (Enhanced Title) -->
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container">
+            <div class="title-container">
+                <h1 class="title-text">PROJECT PORTFOLIO</h1>
+                <div class="title-underline-wrapper">
+                    <div class="title-underline"></div>
+                </div>
+            </div>
+            <p class="text-center lead mb-4">A look at some of our recent geospatial projects.</p>
+
+            <div class="gallery-slider">
+                <img src="https://placehold.co/300x200/266091/ffffff?text=Construction+Site"
+                    alt="Construction Site Mapping" />
+                <img src="https://placehold.co/300x200/0e3050/ffffff?text=Pipeline+Inspection"
+                    alt="Pipeline Inspection" />
+                <img src="https://placehold.co/300x200/266091/ffffff?text=Mining+Volume+Analysis"
+                    alt="Mining Volume Analysis" />
+                <img src="https://placehold.co/300x200/0e3050/ffffff?text=3D+City+Model" alt="3D City Modeling" />
+                <img src="https://placehold.co/300x200/266091/ffffff?text=Environmental+Monitoring"
+                    alt="Environmental Monitoring" />
+                <img src="https://placehold.co/300x200/0e3050/ffffff?text=Coastal+Survey" alt="Coastal Survey" />
+            </div>
+            <div class="text-center mt-4 fade-up">
+                <a href="#" class="btn btn-outline-primary">View Full Case Studies</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOGS SECTION (Enhanced Title & Button) -->
+    <section id="blogs" class="py-5">
+        <div class="container">
+            <div class="title-container pb-4">
+                <h1 class="title-text" style="color: white; -webkit-text-fill-color: rgb(25, 25, 111);">LATEST INSIGHTS
+                </h1>
+                <div class="title-underline-wrapper">
+                    <div class="title-underline" style="background: white;"></div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4 fade-up">
+                    <div class="card blog-card h-100">
+                        <img src="https://placehold.co/400x250/0e3050/ffffff?text=Blog+1" class="card-img-top"
+                            alt="Blog 1" />
+                        <div class="card-body">
+                            <h5 class="card-title text-b2 fw-bold">The Future of Drone-Based Inspections</h5>
+                            <p class="card-text">
+                                How autonomous drones are changing the safety and efficiency landscape of infrastructure
+                                management.
+                            </p>
+                            <a href="#" class="btn btn-sm btn-primary">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-up">
+                    <div class="card blog-card h-100">
+                        <img src="https://placehold.co/400x250/266091/ffffff?text=Blog+2" class="card-img-top"
+                            alt="Blog 2" />
+                        <div class="card-body">
+                            <h5 class="card-title text-b2 fw-bold">LiDAR vs. Photogrammetry: Which is Right for Your
+                                Project?</h5>
+                            <p class="card-text">
+                                A deep dive into the pros and cons of the two leading aerial data capture techniques.
+                            </p>
+                            <a href="#" class="btn btn-sm btn-primary">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-up">
+                    <div class="card blog-card h-100">
+                        <img src="https://placehold.co/400x250/0e3050/ffffff?text=Blog+3" class="card-img-top"
+                            alt="Blog 3" />
+                        <div class="card-body">
+                            <h5 class="card-title text-b2 fw-bold">Integrating Geospatial Data into BIM Workflows</h5>
+                            <p class="card-text">
+                                Learn how to create a seamless digital thread from aerial survey to final construction
+                                model.
+                            </p>
+                            <a href="#" class="btn btn-sm btn-primary">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5 fade-up">
+                <a href="#" class="btn btn-outline-primary">View All Insights</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION (New, Branded Section) -->
+    <section id="contact" class="py-5 bg-dark" style="background-image: linear-gradient(135deg, #0e3050, #002147);">
+        <div class="container">
+            <div class="title-container pb-4">
+                <h1 class="title-text" style="color: white; -webkit-text-fill-color: rgb(255, 255, 255);">GET IN TOUCH
+                </h1>
+                <div class="title-underline-wrapper">
+                    <div class="title-underline" style="background: white;"></div>
+                </div>
+            </div>
+            <p class="text-center text-white-50 lead mb-5">
+                Ready to start your project? Fill out the form below or find us on the map.
+            </p>
+
+            <div class="row g-5">
+                <div class="col-lg-6 fade-up">
+                    <div class="contact-form-card">
+                        <h4 class="text-b2 mb-4 fw-bold">Request a Consultation</h4>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label text-b2">Full Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label text-b2">Email Address</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="service" class="form-label text-b2">Interested Service</label>
+                                <select class="form-select" id="service">
+                                    <option selected>Select a Service</option>
+                                    <option>Aerial Survey</option>
+                                    <option>Construction Monitoring</option>
+                                    <option>Asset Inspection</option>
+                                    <option>Other / General Inquiry</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label text-b2">Project Details</label>
+                                <textarea class="form-control" id="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-lg btn-primary w-100">Send Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 fade-up">
+                    <h4 class="text-white mb-4 fw-bold">Our Location & Contact Info</h4>
+                    <div class="contact-map-placeholder mb-4">
+                        <p>Interactive Map Placeholder</p>
+                    </div>
+                    <p class="text-white"><i class="bi bi-geo-alt-fill text-blue-1"></i> Office: 1109, The Headquarters
+                        Business Park, Jeddah, Saudi Arabia</p>
+                    <p class="text-white"><i class="bi bi-envelope-fill text-blue-1"></i> hello@shamal.sa</p>
+                    <p class="text-white"><i class="bi bi-phone-fill text-blue-1"></i> +966 530301370</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (Kept Original Structure) -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <!-- Logo Placeholder -->
+                    <img src="assets/logo-white.svg" alt="Shamal Technologies Logo" height="40" class="mb-2" />
+                    <h6>About</h6>
+                    <p class="text-white-50">
+                        Shamal Technologies delivers advanced drone solutions for multiple
+                        industries, providing real-time insights and geospatial analytics.
+                    </p>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#blogs">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h6>Contact Details</h6>
+                    <p>Email: hello@shamal.sa<br />Phone: +966 530301370</p>
+                    <h6 class="mt-3">Follow Us</h6>
+                    <a href="#" class="me-3"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="me-3"><i class="bi bi-youtube"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h6>Careers</h6>
+                    <p class="text-white-50">We are always looking for talented geospatial engineers. Send us your CV!
+                    </p>
+                    <a href="#" class="btn btn-sm btn-outline-light">Join Our Team</a>
+                </div>
+            </div>
+            <div class="text-center mt-3 border-top pt-3 border-secondary">
+                &copy; 2025 Shamal Technologies. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.15/dist/lenis.min.js"></script>
+    <script>
+        // Lenis smooth scroll (Kept Original Logic)
+        const lenis = new Lenis();
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+
+        // Fade-up animation on scroll (Kept Original Logic)
+        function fadeUpOnScroll() {
+            const elements = document.querySelectorAll(".fade-up");
+            const windowBottom = window.innerHeight;
+            elements.forEach((el) => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < windowBottom - 50) el.classList.add("visible");
+            });
+        }
+        window.addEventListener("scroll", fadeUpOnScroll);
+        fadeUpOnScroll();
+
+        // Navbar auto-show on activity, auto-hide after idle. (Kept Original Logic)
+        (function () {
+            const navbar = document.querySelector("nav.navbar");
+            if (!navbar) return;
+
+            // Add autohide base class and start visible
+            navbar.classList.add("autohide", "visible");
+
+            let hideTimer = null;
+            const HIDE_DELAY = 1300; // ms of inactivity before hiding
+
+            function showNavbar() {
+                navbar.classList.remove("hidden");
+                navbar.classList.add("visible");
+            }
+
+            function hideNavbar() {
+                navbar.classList.remove("visible");
+                navbar.classList.add("hidden");
+            }
+
+            function resetHideTimer() {
+                if (hideTimer) clearTimeout(hideTimer);
+                hideTimer = setTimeout(() => {
+                    hideNavbar();
+                }, HIDE_DELAY);
+            }
+
+            function onActivity() {
+                showNavbar();
+                resetHideTimer();
+            }
+
+            // Standard activity events
+            window.addEventListener("scroll", onActivity, { passive: true });
+            window.addEventListener("wheel", onActivity, { passive: true });
+            window.addEventListener("touchstart", onActivity, { passive: true });
+            window.addEventListener("touchmove", onActivity, { passive: true });
+
+            // Lenis: if the Lenis instance exists, listen for its scroll events too
+            try {
+                if (window.lenis && typeof window.lenis.on === "function") {
+                    window.lenis.on("scroll", onActivity);
+                }
+            } catch (e) {
+                // ignore if not available
+            }
+
+            // Keep visible while hovering: pause hide timer on enter, restart on leave
+            navbar.addEventListener('mouseenter', function () {
+                if (hideTimer) clearTimeout(hideTimer);
+                showNavbar();
+            });
+            navbar.addEventListener('mouseleave', function () {
+                resetHideTimer();
+            });
+
+            // Start the timer so navbar will hide after the delay if user is idle
+            resetHideTimer();
+        })();
+    </script>
+</body>
+
+</html>
